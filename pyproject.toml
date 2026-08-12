@@ -1,6 +1,6 @@
 [project]
 name = "tokentab"  
-version = "0.1.0"
+version = "0.1.0" 
 description = "Adds up what your AI coding tools cost by reading their local session logs. Supports Claude Code, Codex, and Gemini CLI. CLI + web dashboard, runs offline."
 readme = "README.md"
 requires-python = ">=3.10"
