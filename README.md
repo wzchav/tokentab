@@ -11,7 +11,7 @@ Clone the repo and install it into your environment:
 ```
 git clone https://github.com/wzchav/tokentab
 cd tokentab
-pip install -e .
+pip install .
 tokentab
 ```
 
