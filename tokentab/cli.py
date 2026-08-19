@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import classify
+import setup
 import subprocess
 import random
 import string
@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 
-classify.run_sync(FORCE_SYNC=True)
+setup.run_sync(FORCE_SYNC=True)
 
 def _banner() -> Panel:
     return Panel.fit(
