@@ -9,7 +9,7 @@ from pathlib import Path
 from tokentab import setup
 
 
-setup.run_sync(FORCE_SYNC=True)
+setup.run_sync()
 
 def _banner() -> Panel:
     return Panel.fit(
